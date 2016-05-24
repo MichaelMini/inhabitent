@@ -1,0 +1,27 @@
+
+#wpadminbar .quicklinks ul {
+    text-align: left;
+    display: inline;
+}
+
+/* Global Class */
+
+.container {
+    margin: 0 auto;
+    width: 1120px;
+    h2 {
+    	text-align: center;
+    	text-transform: uppercase;
+    	font-size: 2.4rem;
+    	font-weight: 400;
+    }
+}
+
+.login h1 a {
+    background-size: 312px;
+    background-position: left;
+}
+
+.black-btn {
+    color: black;
+}

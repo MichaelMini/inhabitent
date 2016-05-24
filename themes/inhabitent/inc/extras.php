@@ -20,11 +20,31 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 
-function inhabitent_custom_logo() {
-     echo '<link rel="stylesheet" type="text/css" herf="' .  
-     get_bloginfo('stylesheet_directory') . '/customlogin.css" />' ;                                                               
+// Replace login logo
+
+function my_custom_login_logo() {
+     echo '<style type="text/css">                                                                   
+         h1 a { 
+         	background-image:url('.get_stylesheet_directory_uri().'/images/inhabitent-logo-text-dark.svg) !important; 
+         	height: 59px !important; 
+         	width: 320px !important;
+         	background-size: 320px 59px !important;
+         }                            
+     </style>';
 }
-add_action('login_head', 'inhabitent_custom_login_logo');
+add_action('login_head', 'my_custom_login_logo');
+
+// Replace login logo url
+
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+    return 'Inhabitent';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 // Remove "Editor" links from sub-menus
 function inhabitent_remove_submenus() {

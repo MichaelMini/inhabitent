@@ -28,10 +28,12 @@ a {
 
 .main-navigation {
 	display: flex;
-	width: 40%;
+	width: 600px;
 
 	ul {
-		display: none;
+		display: flex;
+		justify-content: space-between;
+		width: 480px;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -99,14 +101,14 @@ a {
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
+// @media screen and (min-width: 37.5em) {
+// 	.menu-toggle {
+// 		display: none;
+// 	}
+// 	.main-navigation ul {
+// 		display: block;
+// 	}
+// }
 
 .comment-navigation,
 .posts-navigation,
@@ -143,6 +145,10 @@ a {
     justify-content: space-between;
 }
 
+.site-header {
+	border: 1px solid #e1e1e1;
+}
+
 .main-navigation {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -150,6 +156,6 @@ a {
 }
 
 .menu-menu-1-container {
-	font-family: Novecento Sans Web,sans-serif;
-    text-transform: uppercase;
+	font-family: "novecento", sans-serif;
+    // text-transform: uppercase;
 }

@@ -17,6 +17,11 @@ body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 }
 
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
 blockquote, q {
 	quotes: "" "";
 
@@ -34,11 +39,14 @@ hr {
 }
 
 ul, ol {
-	margin: 0 0 $base__space-unit ($base__space-unit * 2);
+	margin: 0;
+	padding: 0;
+	// margin: 0 0 $base__space-unit ($base__space-unit * 2);
 }
 
 ul {
-	list-style: disc;
+	list-style: none;
+	display: flex;
 }
 
 ol {
@@ -67,11 +75,4 @@ img {
 table {
 	margin: 0 0 $base__space-unit;
 	width: 100%;
-}
-
-/* Global Class */
-
-.container {
-    margin: 0 auto;
-    width: 1120px;
 }
