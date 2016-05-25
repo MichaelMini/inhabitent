@@ -54,3 +54,19 @@ function inhabitent_remove_submenus() {
 add_action( 'admin_init', 'inhabitent_remove_submenus', 102 );
 
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+//Custom Function for setting Featured Image as Splash for About Page
+function inhabitent_about_splash_bg() {
+ wp_enqueue_style(
+  'custom-style',
+  get_template_directory_uri() . '/build/css/style.min.css'
+ );
+        $custom_css = 
+          ".entry-header{
+                        background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url('". CFS()->get('hero_banner') ."') no-repeat center bottom;
+                        background-size:cover, cover;
+                        height: 100vh;
+                }";
+        wp_add_inline_style( 'custom-style', $custom_css );
+}
+add_action( 'wp_enqueue_scripts', 'inhabitent_about_splash_bg' );

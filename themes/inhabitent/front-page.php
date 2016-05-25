@@ -18,15 +18,23 @@ get_header(); ?>
 				<div class="product-type-container">
 					<div class="product-type-wrapper">
 						<img src="<?php bloginfo('template_directory'); ?>/images/do.svg" alt="Map icon" height="70" width="70">
+                        <p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
+                        <p><a href="http://localhost:3000/inhabitent/product-type/do/" class="btn">Do Stuff</a></p>
 					</div>
 					<div class="product-type-wrapper">
 						<img src="<?php bloginfo('template_directory'); ?>/images/eat.svg" alt="Coffee cup icon" height="70" width="70">
+						<p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
+                        <p><a href="http://localhost:3000/inhabitent/product-type/eat/" class="btn">Eat Stuff</a></p>
 					</div>
 					<div class="product-type-wrapper">
 						<img src="<?php bloginfo('template_directory'); ?>/images/sleep.svg" alt="Bed icon" height="70" width="70">
+						<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
+						<p><a href="http://localhost:3000/inhabitent/product-type/sleep/" class="btn">Sleep Stuff</a></p>
 					</div>
 					<div class="product-type-wrapper">
 						<img src="<?php bloginfo('template_directory'); ?>/images/wear.svg" alt="knitted cap icon" height="70" width="70">
+						<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
+						<p><a href="http://localhost:3000/inhabitent/product-type/wear/" class="btn">Wear Stuff</a></p>
 					</div>
 				</div>
 			</section>
@@ -91,18 +99,50 @@ get_header(); ?>
 				<h2>Latest adventures</h2>
 				<ul class="flex-full">
 					<li class="full">
-						full
+						<div class="story-wrapper">
+                           	<img width="3000" height="2000" src="../inhabitent/wp-content/uploads/2016/05/canoe-girl.jpg" class="attachment-full size-full wp-post-image" alt="A girl paddling a canoe" srcset="../inhabitent/wp-content/uploads/2016/05/canoe-girl.jpg 3000w, ../inhabitent/wp-content/uploads/2016/05/canoe-girl-300x200.jpg 300w, ../inhabitent/wp-content/uploads/2016/05/canoe-girl-768x512.jpg 768w, ../inhabitent/wp-content/uploads/2016/05/canoe-girl-1024x683.jpg 1024w" sizes="(max-width: 3000px) 100vw, 3000px">
+                           	<div class="story-info">
+                           		<h3 class="entry-title">
+                           			<a href="http://localhost:8888/inhabitent/adventure/getting-back-to-nature-in-a-canoe/" rel="bookmark">Getting Back to Nature in a Canoe</a>
+                           		</h3>
+                           		<a class="white-btn" href="http://localhost:8888/inhabitent/adventure/getting-back-to-nature-in-a-canoe/">Read More</a>
+                        	</div>
+                     	</div>
 					</li>
 					<ul class="flex-half">
 						<li class="half">
-							half
+							<div class="story-wrapper">
+                            	<img width="640" height="427" src="../inhabitent/wp-content/uploads/2016/05/beach-bonfire-1024x683.jpg" class="attachment-large size-large wp-post-image" alt="A bonfire with friends on the beach" srcset="../inhabitent/wp-content/uploads/2016/05/beach-bonfire-1024x683.jpg 1024w, ../inhabitent/wp-content/uploads/2016/05/beach-bonfire-300x200.jpg 300w, ../inhabitent/wp-content/uploads/2016/05/beach-bonfire-768x512.jpg 768w" sizes="(max-width: 640px) 100vw, 640px">
+	                            <div class="story-info">
+		                        	<h3 class="entry-title">
+		                        		<a href="http://localhost:8888/inhabitent/adventure/a-night-with-friends-at-the-beach/" rel="bookmark">A Night with Friends at the Beach</a>
+		                        	</h3>
+	                        		<a class="white-btn" href="http://localhost:8888/inhabitent/adventure/a-night-with-friends-at-the-beach/">Read More</a>
+	                        	</div>
+		                    </div>
 						</li>
 						<ul class="flex-quarter">
 							<li class="quarter">
-								quarter
+								<div class="story-wrapper">
+                                	<img width="640" height="427" src="../inhabitent/wp-content/uploads/2016/05/mountain-hikers-1024x683.jpg" class="attachment-large size-large wp-post-image" alt="Hikers taking in the view on a mountain" srcset="../inhabitent/wp-content/uploads/2016/05/mountain-hikers-1024x683.jpg 1024w, ../inhabitent/wp-content/uploads/2016/05/mountain-hikers-300x200.jpg 300w, ../inhabitent/wp-content/uploads/2016/05/mountain-hikers-768x512.jpg 768w" sizes="(max-width: 640px) 100vw, 640px">
+                                	<div class="story-info">
+                        				<h3 class="entry-title">
+                        					<a href="http://localhost:8888/inhabitent/adventure/taking-in-the-view-at-big-mountain/" rel="bookmark">Taking in the View at Big Mountain</a>
+                        				</h3>
+                        				<a class="white-btn" href="http://localhost:8888/inhabitent/adventure/taking-in-the-view-at-big-mountain/">Read More</a>
+                        			</div>
+                    			</div>
 							</li>
 							<li class="quarter">
-								quarter
+								<div class="story-wrapper">
+                                    <img width="640" height="427" src="../inhabitent/wp-content/uploads/2016/05/night-sky-1024x683.jpg" class="attachment-large size-large wp-post-image" alt="Person star-gazing at the night sky" srcset="../inhabitent/wp-content/uploads/2016/05/night-sky-1024x683.jpg 1024w, ../inhabitent/wp-content/uploads/2016/05/night-sky-300x200.jpg 300w, ../inhabitent/wp-content/uploads/2016/05/night-sky-768x512.jpg 768w" sizes="(max-width: 640px) 100vw, 640px">
+                                    <div class="story-info">
+                        				<h3 class="entry-title">
+                        					<a href="localhost:8888/inhabitent/adventure/star-gazing-at-the-night-sky/" rel="bookmark">Star-Gazing at the Night Sky</a>
+                        				</h3>
+                        				<a class="white-btn" href="localhost:8888/inhabitent/adventure/star-gazing-at-the-night-sky/">Read More</a>
+                        			</div>
+                    			</div>
 							</li>
 						</ul>
 					</ul>

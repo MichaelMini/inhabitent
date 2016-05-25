@@ -76,3 +76,10 @@ table {
 	margin: 0 0 $base__space-unit;
 	width: 100%;
 }
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+    font-family: $font__head;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+

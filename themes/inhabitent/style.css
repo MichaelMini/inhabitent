@@ -43,6 +43,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+.entry-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  color: white; }
+
 #wpadminbar .quicklinks ul {
   text-align: left;
   display: inline; }
@@ -100,10 +109,24 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .site-info {
   text-align: center; }
 
+.home-hero {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url("../../images/home-hero.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.home-hero img {
+  -ms-flex-item-align: center;
+      align-self: center; }
+
 .product-type-container {
   display: -ms-flexbox;
   display: flex;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 .product-type-wrapper {
   border: 1px solid #e1e1e1;
@@ -135,6 +158,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .entry-title {
   height: 110px; }
 
+.btn,
 .black-btn {
   position: relative;
   bottom: 0.3rem;
@@ -146,10 +170,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .black-btn:visited {
   color: black; }
 
+.btn,
+.btn:visited,
 .black-btn:hover {
   background: #248a83;
   border: none;
   color: white; }
+
+.btn:hover {
+  background: #19625d; }
 
 .full {
   color: blue;
@@ -165,6 +194,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .half {
   height: 50%;
   color: red; }
+  .half img {
+    object-fit: cover;
+    height: 160px; }
 
 .flex-quarter {
   height: 50%; }
@@ -175,6 +207,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 .adventures li {
   border: 10px solid white; }
+
+.story-wrapper {
+  position: relative; }
+
+.story-info {
+  position: absolute;
+  top: 3px; }
 
 html {
   font-family: sans-serif;
@@ -515,6 +554,12 @@ img {
 table {
   margin: 0 0 1.5em;
   width: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-family: "Novecento", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
 
 /*--------------------------------------------------------------
 # Forms

@@ -1,6 +1,19 @@
+
+.home-hero {
+	background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url("../../images/home-hero.jpg");
+	background-size: cover;
+    height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+
+.home-hero img {
+	align-self: center;
+}
 .product-type-container {
 	display: flex;
 	width: 100%;
+	text-align: center;
 }
 
 .product-type-wrapper {
@@ -44,6 +57,7 @@
 	height: 110px;
 }
 
+.btn,
 .black-btn {
     position: relative;
     bottom: 0.3rem;
@@ -57,10 +71,16 @@
 	color: black;
 }
 
+.btn,
+.btn:visited,
 .black-btn:hover {
 	background: $color__link; 
 	border: none;
 	color: white;
+}
+
+.btn:hover {
+	background: #19625d;
 }
 
 .flex-full {
@@ -83,6 +103,10 @@
 .half {
 	height: 50%;
 	color: red;
+	img {
+	    object-fit: cover;
+	    height: 160px;
+	}
 }
 
 .flex-quarter {
@@ -96,4 +120,13 @@
 
 .adventures li {
 	border: 10px solid white;
+}
+
+.story-wrapper {
+	position: relative;
+}
+
+.story-info {
+	position: absolute;
+	top: 3px;
 }
