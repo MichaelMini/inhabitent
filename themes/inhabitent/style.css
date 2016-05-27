@@ -52,6 +52,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       align-items: center;
   color: white; }
 
+.page-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
 .page-widget-content {
   margin-bottom: 30px;
   width: 800px; }
@@ -64,10 +70,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 /* Global Class */
 .container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
   margin: 0 auto;
   width: 1120px; }
   .container h2 {
@@ -643,7 +645,8 @@ textarea {
   padding: 13px;
   width: 100vw;
   height: 60px;
-  background-color: rgba(225, 225, 225, 0.7); }
+  background-color: rgba(225, 225, 225, 0.7);
+  z-index: 100; }
 
 .site-header h1 {
   background: url("../../images/inhabitent-logo-tent.svg") no-repeat;
@@ -831,6 +834,13 @@ a {
 .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */ }
+  .widget h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left; }
+  .widget ul {
+    -ms-flex-direction: column;
+        flex-direction: column; }
   .widget select {
     max-width: 100%; }
 
@@ -838,10 +848,23 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+/* Sidebar */
+.side-bar a {
+  text-transform: lowercase; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.entry-header h2 {
+  position: absolute;
+  left: 0;
+  font-size: 40px; }
+
+.post-container {
+  width: 60%;
+  width: 60%; }
+
 .sticky {
   display: block; }
 
@@ -863,6 +886,39 @@ a {
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
+
+.post-page {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.post-page .entry-header {
+  position: relative;
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
+
+.entry-header h2 {
+  background-color: #248a83;
+  height: auto;
+  left: 0;
+  padding: 10px 20px;
+  position: absolute;
+  text-align: left;
+  width: 78%; }
+  .entry-header h2 a:visited,
+  .entry-header h2 a:hover,
+  .entry-header h2 a {
+    color: white;
+    font-weight: bold; }
+
+.entry-meta {
+  background-color: #248a83;
+  position: absolute;
+  right: 32px;
+  padding: 3px 13px;
+  bottom: 0px;
+  /* color: black; */ }
 
 /* Asides */
 .blog .format-aside .entry-title,

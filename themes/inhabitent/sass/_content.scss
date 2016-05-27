@@ -4,6 +4,20 @@
 
 /* Posts and pages */
 
+.entry-header {
+	h2 {
+		position: absolute;
+		left: 0;
+		font-size: 40px;
+	}
+}
+
+.post-container {
+	width: 60%;
+	width: 60%;
+	// display: flex;
+}
+
 .sticky {
 	display: block;
 }
@@ -32,6 +46,47 @@
 	margin: 0 0 $base__space-unit;
 }
 
+.post-page {
+	display: flex;
+	justify-content: space-between;
+}
+
+.post-page .entry-header {
+	position: relative;
+	justify-content: flex-start;
+}
+
+
+	
+.entry-header {
+	h2 {
+	    background-color: #248a83;
+	    // color: #fff;
+		height: auto;
+		left: 0;
+		padding: 10px 20px;
+		position: absolute;
+		text-align: left;
+		width: 78%;
+		a:visited,
+		a:hover,
+		a {
+			color: white;
+			font-weight: bold;
+		}		
+	}
+}
+// .entry-header 
+
+.entry-meta {
+    background-color: #248a83;
+    position: absolute;
+    right: 32px;
+    padding: 3px 13px;
+    bottom: 0px;
+    /* color: black; */
+}
+
 /* Asides */
 
 .blog .format-aside .entry-title,
@@ -49,4 +104,6 @@
 }
 
 /* Start Here */
+
+
 
