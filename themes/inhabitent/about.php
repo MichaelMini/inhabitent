@@ -1,6 +1,5 @@
 <?php
 /**
- * The template for displaying all pages.
  * Template Name: About Page
  * @package RED_Starter_Theme
  */
@@ -12,11 +11,22 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-				<?php echo CFS()->get( 'about_input_field' ); ?>
+
+				<section class="container">
+					<div class="page-widget-content">
+
+						<h1 class="title">Our story</h1>
+						<?php echo CFS()->get( 'about_our_story' ); ?>
+
+						<h1 class="title">Our team</h1>
+						<?php echo CFS()->get( 'about_our_team' ); ?>
+
+					</div>
+				</section>
+
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

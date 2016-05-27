@@ -13,7 +13,7 @@ get_header(); ?>
 			<section class="home-hero">
 				<img src="<?php bloginfo('template_directory'); ?>/images/inhabitent-logo-full.svg" class="logo" alt="Inhabitent full logo">
 			</section>
-			<section class="product-info container">
+			<!-- <section class="product-info container">
 				<h2>Shop stuff</h2>
 				<div class="product-type-container">
 					<div class="product-type-wrapper">
@@ -37,8 +37,77 @@ get_header(); ?>
 						<p><a href="http://localhost:3000/inhabitent/product-type/wear/" class="btn">Wear Stuff</a></p>
 					</div>
 				</div>
-			</section>
+			</section> -->
+
+<!-- Loop products on Front Page -->
+
+<?php $terms = get_terms( 'product-type' ); ?>
+<?php if ( ! empty( $terms ) && ! is_wp_error( $terms ) ):?>
+	<section class="product-info container">
+		<h2>Shop stuff</h2>
+		<div class="product-type-container">
+			<?php foreach ( $terms as $term ) :?>
+			    <div class="product-type-wrapper">
+			        <p><img src="<?php echo get_template_directory_uri() ?>/images/<?php echo $term->slug ?>.svg" height="70" width="70"></p>
+			        <p><?php echo $term->description ?></p>
+			        <p>
+			        	<a href="<?php echo get_term_link($term, 'product-type') ?><?php echo $term->slug ?>/" class="btn">
+			        		<?php echo $term->slug ?> stuff
+			        	</a>
+			        </p>   
+			    </div>
+			<?php endforeach ?>
+		</div>
+	</section>
+<?php endif; ?>
+
+<!-- <?php
+$terms = get_terms( 'product-type' );
+if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
+    echo '<ul>';
+    foreach ( $terms as $term ) {
+        echo '<li><img src="' . get_template_directory_uri() . '/images/' . $term->slug . '.svg"></li>';
+        echo '<li>' . $term->description . '</li>';
+        echo '<li><a href="' . get_post_type_archive_link() . '/inhabitent/product-type/' . $term->slug . '/">Do stuff</a></li>';
+    }
+    echo '</ul>';
+}
+?> -->
+<!-- Loop Blog Logs on Front Page -->
+
 			<section class="trending container">
+				<h2>Inhabitent Journal</h2>
+				<ul>
+					<?php
+					   $args = array( 'post_type' => 'post', 'posts_per_page' => 3 );
+					   $journal_posts = get_posts( $args ); // returns an array of posts
+					?>
+					<?php if ( ! empty( $journal_posts ) && ! is_wp_error( $journal_posts ) ):?>
+						<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
+						   	<!-- Content from your array of post results goes here --> 
+									<li>
+								   		<div class="thumbnail-wrap">
+								   			<?php the_post_thumbnail(); ?>
+								   		</div>
+								   		<div class="post-info-wrap">
+								   			<span class="entry-meta">
+								   				<span class="post-on">
+										   			<?php the_date(); ?>
+								   				</span>
+								   				/<?php comments_number( '0 Comments' ); ?>
+								   			</span>
+								   			<h3 class="entry-title">
+									   			<a href="<?php the_permalink(); ?> "><?php the_title(); ?></a>  			
+								   			</h3>
+								   			<a href="<?php the_permalink(); ?> ">Read Entry</a>  			
+								   		</div>	
+								   	</li>
+						<?php endforeach; wp_reset_postdata(); ?>
+					<?php endif; ?>
+				</ul>
+			</section>
+
+			<!-- <section class="trending container">
 				<h2>Inhabitent Journal</h2>
 				<ul>
 					<li>
@@ -93,7 +162,7 @@ get_header(); ?>
 						</div>
 					</li>
 				</ul>
-			</section>
+			</section> -->
 
 			<section class="adventures container">
 				<h2>Latest adventures</h2>
