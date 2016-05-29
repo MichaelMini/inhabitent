@@ -43,6 +43,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+.sidebar .inhabitent-hours-class span {
+  font-weight: bold; }
+
+.sidebar a {
+  text-transform: capitalize; }
+
+.page-find-us .entry-header {
+  display: none; }
+
+.page-find-us .post-container h2 {
+  text-align: left;
+  font-weight: bold; }
+
 .all-products-wrap {
   display: -ms-flexbox;
   display: flex;
@@ -904,7 +917,7 @@ a {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */ }
   .widget h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: left; }
   .widget ul {
@@ -931,7 +944,6 @@ a {
   font-size: 40px; }
 
 .post-container {
-  width: 60%;
   width: 60%; }
 
 .sticky {

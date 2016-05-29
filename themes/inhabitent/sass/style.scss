@@ -52,6 +52,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 // CSS included in style.css.
 
+@import "sidebar";
+@import "find-us";
 @import "archive-product";
 @import "about";
 @import "global";
