@@ -59,6 +59,7 @@
 
 	
 .entry-header {
+	width: 670px;
 	h2 {
 	    background-color: #248a83;
 	    // color: #fff;
@@ -75,17 +76,17 @@
 			font-weight: bold;
 		}		
 	}
+	.entry-meta {
+	    background-color: #248a83;
+	    position: absolute;
+	    right: 32px;
+	    padding: 3px 13px;
+	    bottom: 0px;
+	    /* color: black; */
+	}
 }
 // .entry-header 
 
-.entry-meta {
-    background-color: #248a83;
-    position: absolute;
-    right: 32px;
-    padding: 3px 13px;
-    bottom: 0px;
-    /* color: black; */
-}
 
 /* Asides */
 

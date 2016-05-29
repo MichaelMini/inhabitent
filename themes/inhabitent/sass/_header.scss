@@ -1,3 +1,22 @@
+fieldset {
+	padding: 0;
+	border: NONE;
+    /* margin: 0 2px; */
+    width: 330px;
+    height: 0;
+    button,
+    button:hover {
+    	background-color: none;
+    }
+	input {
+		height: 20px;
+	}
+}
+
+.search-field {
+	display: none;
+}
+
 .site-header{
 	position: fixed;
 	padding: 13px;
@@ -19,7 +38,7 @@
 }
 
 .site-branding {
-	width: 100%;
+	width: 4.5%;
 }
 
 .home-hero {

@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-
+<h1>front-page.php</h1>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -51,7 +51,7 @@ get_header(); ?>
 			        <p><img src="<?php echo get_template_directory_uri() ?>/images/<?php echo $term->slug ?>.svg" height="70" width="70"></p>
 			        <p><?php echo $term->description ?></p>
 			        <p>
-			        	<a href="<?php echo get_term_link($term, 'product-type') ?><?php echo $term->slug ?>/" class="btn">
+			        	<a href="<?php echo get_term_link($term, 'product-type') ?>" class="btn">
 			        		<?php echo $term->slug ?> stuff
 			        	</a>
 			        </p>   

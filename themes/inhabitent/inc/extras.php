@@ -75,6 +75,20 @@ function inhabitent_about_splash_bg() {
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_about_splash_bg' );
 
+//Custom Function to Get Archive Title
+
+function inhabitent_archive_title() {
+     
+     if (is_post_type_archive('product')) {
+        $title = 'Shop Stuff';
+
+     }
+     return $title;
+
+}
+add_filter( 'get_the_archive_title', 'inhabitent_archive_title');
+
+
 // function inhabitent_filter_product_query( $query ) {
 
 //     if ( is_post_type_archive() && !is_admin() && $query->is_main_query() ) {

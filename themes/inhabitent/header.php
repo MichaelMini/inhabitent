@@ -17,7 +17,7 @@
 
 	<?php wp_head(); ?>
 	</head>
-<div class="hello"></div>
+<!-- <div class="hello"></div> -->
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content">
@@ -34,6 +34,7 @@
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button> -->
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						<?php get_search_form(); ?>
 					</nav><!-- #site-navigation -->
 				</div>
 			</header><!-- #masthead -->
