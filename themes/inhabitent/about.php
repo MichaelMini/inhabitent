@@ -5,15 +5,15 @@
  */
 
 get_header(); ?>
-
-	<div id="primary" class="content-area">
+<h1>about.php</h1>
+	<div id="primary" class="content-area about-page">
 		<main id="main" class="site-main" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 				<section class="container page-container">
-					<div class="page-widget-content">
+					<div class="page-about-content">
 
 						<h1 class="title">Our story</h1>
 						<?php echo CFS()->get( 'about_our_story' ); ?>

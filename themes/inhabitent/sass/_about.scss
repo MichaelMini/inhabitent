@@ -1,17 +1,20 @@
-.entry-header {
-	// position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-}
+.about-page {
+	.entry-header {
+		// position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		width: 100vw;
+	}
+} 
 
 .page-container {
 	display: flex;
 	justify-content: center;
 }
 
-.page-widget-content {
+.page-about-content {
 	margin-bottom: 30px;
 	width: 800px;
 	h1 {

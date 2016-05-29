@@ -108,14 +108,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   font-weight: bold;
   display: inline; }
 
-.entry-header {
+.about-page .entry-header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  color: white; }
+  color: white;
+  width: 100vw; }
 
 .page-container {
   display: -ms-flexbox;
@@ -123,10 +124,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   -ms-flex-pack: center;
       justify-content: center; }
 
-.page-widget-content {
+.page-about-content {
   margin-bottom: 30px;
   width: 800px; }
-  .page-widget-content h1 {
+  .page-about-content h1 {
     text-align: center; }
 
 #wpadminbar .quicklinks ul {
@@ -148,7 +149,38 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   background-position: left; }
 
 .black-btn {
+  color: black;
+  border: 1px solid black; }
+
+.white-btn,
+.white-btn:visited {
+  color: white;
+  border: 1px solid white; }
+
+.btn,
+.black-btn,
+.white-btn {
+  position: relative;
+  bottom: 0.3rem;
+  font-size: .9rem;
+  padding: 15px 30px; }
+
+.black-btn,
+.black-btn:visited {
   color: black; }
+
+.btn,
+.btn:visited,
+.black-btn:hover,
+.white-btn:hover {
+  background: #248a83;
+  border: none;
+  color: white; }
+
+.btn:hover,
+.white-btn:hover {
+  background: #19625d;
+  color: white; }
 
 .site-footer {
   background: url(../../images/dark-wood.png);
@@ -235,35 +267,22 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .post-info-wrap {
   padding: 20px; }
 
-.entry-title {
+.trending .entry-title {
   height: 110px; }
 
-.btn,
-.black-btn {
-  position: relative;
-  bottom: 0.3rem;
-  border: 1px solid black;
-  font-size: .9rem;
-  padding: 15px 30px; }
-
-.black-btn,
-.black-btn:visited {
-  color: black; }
-
-.btn,
-.btn:visited,
-.black-btn:hover {
-  background: #248a83;
-  border: none;
+.adventures a,
+.adventures a:visited {
   color: white; }
 
-.btn:hover {
-  background: #19625d; }
+.adventures h3 {
+  font-family: "merriweather", sans-serif;
+  font-weight: normal; }
 
 .full {
   color: blue;
   width: 50%;
-  height: 100%; }
+  height: 100%;
+  font-size: 38px; }
 
 .flex-half {
   -ms-flex-direction: column;
@@ -273,7 +292,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 .half {
   height: 50%;
-  color: red; }
+  color: red;
+  font-size: 20.1px; }
   .half img {
     object-fit: cover;
     height: 160px; }
@@ -283,7 +303,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 .quarter {
   width: 50%;
-  color: green; }
+  color: green;
+  font-size: 17px; }
 
 .adventures li {
   border: 10px solid white; }

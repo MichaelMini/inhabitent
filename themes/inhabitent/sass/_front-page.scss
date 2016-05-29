@@ -55,34 +55,21 @@
 	padding: 20px;
 }
 
-.entry-title {
-	height: 110px;
+.trending{
+	.entry-title {
+		height: 110px;
+	}
 }
 
-.btn,
-.black-btn {
-    position: relative;
-    bottom: 0.3rem;
-	border: 1px solid black;
-	font-size: .9rem;
-	padding: 15px 30px;
-}
-
-.black-btn,
-.black-btn:visited {
-	color: black;
-}
-
-.btn,
-.btn:visited,
-.black-btn:hover {
-	background: $color__link; 
-	border: none;
-	color: white;
-}
-
-.btn:hover {
-	background: #19625d;
+.adventures {
+	a,
+	a:visited {
+		color: white;
+	}
+	h3 {
+		font-family: $font__main;
+		font-weight: normal;
+	}
 }
 
 .flex-full {
@@ -94,6 +81,7 @@
 	color: blue;
 	width: 50%;
 	height: 100%;
+	font-size: 38px;
 }
 
 .flex-half {
@@ -105,6 +93,7 @@
 .half {
 	height: 50%;
 	color: red;
+	font-size: 20.1px;
 	img {
 	    object-fit: cover;
 	    height: 160px;
@@ -118,6 +107,7 @@
 .quarter {
 	width: 50%;
 	color: green;
+	font-size: 17px;
 }
 
 .adventures li {

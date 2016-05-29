@@ -99,7 +99,7 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 								   			<h3 class="entry-title">
 									   			<a href="<?php the_permalink(); ?> "><?php the_title(); ?></a>  			
 								   			</h3>
-								   			<a href="<?php the_permalink(); ?> ">Read Entry</a>  			
+								   			<a href="<?php the_permalink(); ?>" class="black-btn">Read Entry</a>  			
 								   		</div>	
 								   	</li>
 						<?php endforeach; wp_reset_postdata(); ?>

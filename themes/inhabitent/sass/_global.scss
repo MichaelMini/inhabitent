@@ -24,4 +24,41 @@
 
 .black-btn {
     color: black;
+    border: 1px solid black;
 }
+
+.white-btn,
+.white-btn:visited {
+    color: white;
+    border: 1px solid white;
+}
+
+.btn,
+.black-btn,
+.white-btn {
+    position: relative;
+    bottom: 0.3rem;
+    font-size: .9rem;
+    padding: 15px 30px;
+}
+
+.black-btn,
+.black-btn:visited {
+    color: black;
+}
+
+.btn,
+.btn:visited,
+.black-btn:hover,
+.white-btn:hover {
+    background: $color__link; 
+    border: none;
+    color: white;
+}
+
+.btn:hover,
+.white-btn:hover {
+    background: #19625d;
+    color: white;
+}
+
