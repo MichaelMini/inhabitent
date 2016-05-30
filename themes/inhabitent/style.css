@@ -43,11 +43,25 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
-.sidebar .inhabitent-hours-class span {
-  font-weight: bold; }
+.single-product article {
+  width: 1120px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex; }
+
+.type-product .entry-header {
+  width: 330vw;
+  margin: 60px 70px 0 0; }
 
 .sidebar a {
   text-transform: capitalize; }
+
+.inhabitent-hours-class span,
+.footer-block-item span {
+  font-weight: bold; }
+
+.type-product .entry-head {
+  width: 430%; }
 
 .page-find-us .entry-header {
   display: none; }
@@ -90,10 +104,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       align-items: center;
   padding: 0 8px; }
 
-.archive-product .product-info {
+.archive-product .product-info,
+.product-type {
   text-align: center; }
   .archive-product .product-info .product-type-wrapper,
-  .archive-product .product-info .product-type-wrapper:hover {
+  .archive-product .product-info .product-type-wrapper:hover,
+  .product-type .product-type-wrapper,
+  .product-type .product-type-wrapper:hover {
     border: none;
     width: 100%; }
 
@@ -102,7 +119,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   height: 250px;
   width: 377px; }
 
-.archive-product h1 {
+.archive-product h1,
+.product-type h1 {
   color: black;
   font-size: 2.6rem;
   font-weight: bold;
@@ -181,6 +199,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .white-btn:hover {
   background: #19625d;
   color: white; }
+
+.read-btn {
+  padding-bottom: 30px; }
 
 .site-footer {
   background: url(../../images/dark-wood.png);
@@ -965,13 +986,14 @@ a {
   font-size: 40px; }
 
 .post-container {
-  width: 60%; }
+  width: 60%;
+  padding-bottom: 20px; }
 
 .sticky {
   display: block; }
 
 .hentry {
-  margin: 0 0 1.5em; }
+  margin: 0 auto 1.5em; }
 
 .updated:not(.published) {
   display: none; }
@@ -1009,19 +1031,21 @@ a {
     padding: 10px 20px;
     position: absolute;
     text-align: left;
+    top: 10px;
     width: 78%; }
-    .entry-header h2 a:visited,
-    .entry-header h2 a:hover,
     .entry-header h2 a {
       color: white;
       font-weight: bold; }
+    .entry-header h2 a:hover,
+    .entry-header h2 a:visited {
+      color: #f0e4d1; }
   .entry-header .entry-meta {
     background-color: #248a83;
     position: absolute;
     right: 32px;
     padding: 3px 13px;
-    bottom: 0px;
-    /* color: black; */ }
+    bottom: 38px;
+    color: white; }
 
 /* Asides */
 .blog .format-aside .entry-title,

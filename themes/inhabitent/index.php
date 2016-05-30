@@ -25,6 +25,10 @@ get_header(); ?>
 
 							<?php get_template_part( 'template-parts/content' ); ?>
 
+							<p class="read-btn">
+								<a href="<?php the_permalink(); ?>" class="read-more black-btn">Read more →</a>
+							</p>
+
 						<?php endwhile; ?>
 
 						<?php the_posts_navigation(); ?>

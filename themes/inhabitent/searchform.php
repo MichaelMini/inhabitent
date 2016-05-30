@@ -4,11 +4,11 @@
 		<span class="icon-search" aria-hidden="true">
 			<a href="" class="search-btn">
 				<i class="fa fa-search"></i>
-			</a>
-		</span>
-		<span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
 		<label>
 			<input type="search" class="search-field" placeholder="SEARCH AND HIT ENTER ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
 		</label>
+			</a>
+		<span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
+		</span>
 	</fieldset>
 </form>

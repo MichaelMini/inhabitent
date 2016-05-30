@@ -8,7 +8,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main single-product" role="main">
 <h1>single-product.php</h1>
 		<?php while ( have_posts() ) : the_post(); ?>
 
@@ -17,11 +17,11 @@ get_header(); ?>
 					<?php if ( has_post_thumbnail() ) : ?>
 						<?php the_post_thumbnail( 'large' ); ?>
 					<?php endif; ?>
-
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</header><!-- .entry-header -->
 
+
 				<div class="entry-content">
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 					<!-- Price goes here -->
 					<?php echo CFS()->get( 'price' ); ?>
 					<?php the_content(); ?>
