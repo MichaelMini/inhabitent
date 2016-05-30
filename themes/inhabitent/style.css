@@ -82,6 +82,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .single-product-container {
   width: 260px;
   margin: 0 10px; }
+  .single-product-container img,
+  .single-product-container .entry-header {
+    height: 220px; }
   .single-product-container .entry-header,
   .single-product-container .product-type-wrapper {
     width: 270px;
@@ -106,7 +109,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 .archive-product .product-info,
 .product-type {
-  text-align: center; }
+  text-align: center;
+  margin-top: 20v; }
   .archive-product .product-info .product-type-wrapper,
   .archive-product .product-info .product-type-wrapper:hover,
   .product-type .product-type-wrapper,
@@ -116,7 +120,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 .archive-product img,
 .archive-product a {
-  height: 250px;
+  height: 220px;
   width: 377px; }
 
 .archive-product h1,
@@ -751,8 +755,7 @@ textarea {
 
 fieldset {
   padding: 0;
-  border: NONE;
-  /* margin: 0 2px; */
+  border: none;
   width: 330px;
   height: 0; }
   fieldset button,
@@ -767,6 +770,7 @@ fieldset {
 .site-header {
   position: fixed;
   padding: 13px;
+  top: 0;
   width: 100vw;
   height: 60px;
   background-color: rgba(225, 225, 225, 0.7);

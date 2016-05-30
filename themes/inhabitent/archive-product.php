@@ -2,14 +2,14 @@
 /**
  * The template for displaying archive pages.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main archive-product" role="main">
-<h1>archive-product.php</h1>
+
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header archive-product">
@@ -42,30 +42,27 @@ get_header(); ?>
 
 			<section class="all-products-wrap container">
 				<?php /* Start the Loop */ ?>
-<?php query_posts($query_string."&orderby=title&order=ASC"); ?>
+				<?php query_posts($query_string."&orderby=title&order=ASC"); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php
-	//					get_template_part( 'template-parts/content' );
-					?>
 
-					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-							<div class="single-product-container">
-								<header class="entry-header">
-									<?php if ( has_post_thumbnail() ) : ?>
-										<a href="<?php the_permalink(); ?> ">
-											<?php the_post_thumbnail( 'large' ); ?>
-										</a> 
-									<?php endif; ?>
-								</header><!-- .entry-header -->
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+						<div class="single-product-container">
+							<header class="entry-header">
+								<?php if ( has_post_thumbnail() ) : ?>
+									<a href="<?php the_permalink(); ?> ">
+										<?php the_post_thumbnail( 'large' ); ?>
+									</a> 
+								<?php endif; ?>
+							</header><!-- .entry-header -->
 
-								<div class="entry-content product-type-wrapper">
-									<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-									<!-- Price goes here -->
-									<?php echo CFS()->get( 'price' ); ?>
-								</div><!-- .entry-content -->
-							</div>
-					</article><!-- #post-## -->
+							<div class="entry-content product-type-wrapper">
+								<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+								<!-- Price goes here -->
+								<?php echo CFS()->get( 'price' ); ?>
+							</div><!-- .entry-content -->
+						</div>
+				</article><!-- #post-## -->
 
 
 				<?php endwhile; ?>

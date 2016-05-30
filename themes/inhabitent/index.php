@@ -2,14 +2,14 @@
 /**
  * The main template file.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-<h1>index.php</h1>
+
 			<section class="container post-page">
 				<div class='post-container'>
 					<?php if ( have_posts() ) : ?>

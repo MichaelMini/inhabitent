@@ -2,7 +2,7 @@
 /**
  * Custom functions that act independently of the theme templates.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 /**
@@ -61,10 +61,7 @@ function inhabitent_about_splash_bg() {
         if ( !is_page_template('about.php') ) {
             return ;
         }
- // wp_enqueue_style(
- //  'custom-style',
- //  get_template_directory_uri() . '/build/css/style.min.css'
- // );
+
         $custom_css = 
           ".entry-header{
                         background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url('". CFS()->get('hero_banner') ."') no-repeat center bottom;
@@ -77,26 +74,15 @@ add_action( 'wp_enqueue_scripts', 'inhabitent_about_splash_bg' );
 
 //Custom Function to Get Archive Title
 
-function inhabitent_archive_title() {
+function inhabitent_archive_title($title) {
      
      if (is_post_type_archive('product')) {
         $title = 'Shop Stuff';
 
+     } else if (is_tax('product-type')) {
+        $title = single_term_title();
      }
      return $title;
 
 }
 add_filter( 'get_the_archive_title', 'inhabitent_archive_title');
-
-
-// function inhabitent_filter_product_query( $query ) {
-
-//     if ( is_post_type_archive() && !is_admin() && $query->is_main_query() ) {
-//         $query->set( 'orderby', 'title' );
-//         $query->set( 'order', 'ASC' );
-//         $query->set( 'post_per_page', 16);
-//     }
-
-// }
-
-// add_action( 'pre_get_posts', 'inhabitent_filter_product_query' );

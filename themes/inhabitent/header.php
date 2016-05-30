@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 ?><!DOCTYPE html>
@@ -17,7 +17,7 @@
 
 	<?php wp_head(); ?>
 	</head>
-<!-- <div class="hello"></div> -->
+
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content">

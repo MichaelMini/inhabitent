@@ -1,7 +1,6 @@
 fieldset {
 	padding: 0;
-	border: NONE;
-    /* margin: 0 2px; */
+	border: none;
     width: 330px;
     height: 0;
     button,
@@ -20,6 +19,7 @@ fieldset {
 .site-header{
 	position: fixed;
 	padding: 13px;
+	top: 0;
 	width: 100vw;
 	height: 60px;
 	background-color: rgba( 225, 225, 225, 0.7);
