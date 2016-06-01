@@ -5,7 +5,7 @@
  */
 
 get_header(); ?>
-<h1>about.php</h1>
+
 	<div id="primary" class="content-area about-page">
 		<main id="main" class="site-main" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
