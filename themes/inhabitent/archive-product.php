@@ -22,8 +22,6 @@ get_header(); ?>
 						<div class="product-type-container">
 							<?php foreach ( $terms as $term ) :?>
 							    <div class="product-type-wrapper">
-							        <!-- <p><img src="<?php echo get_template_directory_uri() ?>/images/<?php echo $term->slug ?>.svg" height="70" width="70"></p> -->
-							        <!-- <p><?php echo $term->description ?></p> -->
 							        <p>
 							        	<a href="<?php echo get_post_type_archive_link() ?>/inhabitent/product-type/<?php echo $term->slug ?>/" class="">
 							        		<?php echo $term->slug ?> <!-- stuff -->
@@ -34,10 +32,6 @@ get_header(); ?>
 						</div>
 					</section>
 				<?php endif; ?>
-				<?php
-					// the_archive_title( '<h1 class="page-title">', '</h1>' );
-					// the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
 			</header><!-- .page-header -->
 
 			<section class="all-products-wrap container">

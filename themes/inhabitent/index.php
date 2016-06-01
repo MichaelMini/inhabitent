@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-
+<h1>index php</h1>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -26,7 +26,7 @@ get_header(); ?>
 							<?php get_template_part( 'template-parts/content' ); ?>
 
 							<p class="read-btn">
-								<a href="<?php the_permalink(); ?>" class="read-more black-btn">Read more →</a>
+								<a href="<?php the_permalink(); ?>" class="read-more black-btn">Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 							</p>
 
 						<?php endwhile; ?>

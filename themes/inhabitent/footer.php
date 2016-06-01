@@ -35,12 +35,12 @@
 					</div>
 					<div class="text-logo footer-block-item">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img src="<?php bloginfo('template_directory'); ?>/images/inhabitent-logo-text.svg" alt="Inhabitent logo">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/inhabitent-logo-text.svg" alt="Inhabitent logo">
 						</a>
 					</div>
 				</div>
 				<div class="site-info">
-					<div class="container">COPYRIGHT © 2016 INHABITENT</div>
+					<div class="container">COPYRIGHT <i class="fa fa-copyright" aria-hidden="true"></i> 2016 INHABITENT</div>
 					<!-- <a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a> -->
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->

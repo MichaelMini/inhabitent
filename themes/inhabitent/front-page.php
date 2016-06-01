@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="home-hero">
-				<img src="<?php bloginfo('template_directory'); ?>/images/inhabitent-logo-full.svg" class="logo" alt="Inhabitent full logo">
+				<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/inhabitent-logo-full.svg" class="logo" alt="Inhabitent full logo">
 			</section>
 			
 
