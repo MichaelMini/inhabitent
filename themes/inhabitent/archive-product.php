@@ -6,14 +6,14 @@
  */
 
 get_header(); ?>
-
+<h1>archive-produck.php</h1>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main archive-product" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header archive-product">
-				<!-- <h1 class="font-h"></h1> -->
+				
 				<?php $terms = get_terms( 'product-type' ); ?>
 				<?php if ( ! empty( $terms ) && ! is_wp_error( $terms ) ):?>
 					<section class="product-info container">
