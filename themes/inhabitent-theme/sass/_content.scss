@@ -5,6 +5,7 @@
 /* Posts and pages */
 
 .entry-header {
+	h1,
 	h2 {
 		position: absolute;
 		left: 0;
@@ -59,8 +60,10 @@
 	
 .entry-header {
 	width: 670px;
+	h1,
 	h2 {
 	    background-color: #248a83;
+	    color: white;
 		height: auto;
 		left: 0;
 		padding: 10px 20px;

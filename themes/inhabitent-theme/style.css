@@ -392,6 +392,7 @@ h1, h2, h3, h4, h5, h6 {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.entry-header h1,
 .entry-header h2 {
   position: absolute;
   left: 0;
@@ -436,8 +437,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .entry-header {
   width: 670px; }
+  .entry-header h1,
   .entry-header h2 {
     background-color: #248a83;
+    color: white;
     height: auto;
     left: 0;
     padding: 10px 20px;
@@ -445,9 +448,12 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
     top: 10px;
     width: 78%; }
+    .entry-header h1 a,
     .entry-header h2 a {
       color: white;
       font-weight: bold; }
+    .entry-header h1 a:hover,
+    .entry-header h1 a:visited,
     .entry-header h2 a:hover,
     .entry-header h2 a:visited {
       color: #f0e4d1; }
