@@ -1,7 +1,7 @@
 fieldset {
 	padding: 0;
 	border: none;
-    width: 330px;
+    // width: 330px;
     height: 0;
     button,
     button:hover {
@@ -18,8 +18,8 @@ fieldset {
 
 .site-header{
 	position: fixed;
-	padding: 13px;
-	top: 0;
+	padding: 12px;
+	top: 32px;
 	width: 100vw;
 	height: 60px;
 	background-color: rgba( 225, 225, 225, 0.7);
@@ -38,7 +38,7 @@ fieldset {
 }
 
 .site-branding {
-	width: 4.5%;
+	// width: 4.5%;
 }
 
 .home-hero {

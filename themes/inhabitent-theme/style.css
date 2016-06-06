@@ -481,7 +481,6 @@ h1, h2, h3, h4, h5, h6 {
 fieldset {
   padding: 0;
   border: none;
-  width: 330px;
   height: 0; }
   fieldset button,
   fieldset button:hover {
@@ -494,8 +493,8 @@ fieldset {
 
 .site-header {
   position: fixed;
-  padding: 13px;
-  top: 0;
+  padding: 12px;
+  top: 32px;
   width: 100vw;
   height: 60px;
   background-color: rgba(225, 225, 225, 0.7);
@@ -510,9 +509,6 @@ fieldset {
   text-indent: 100%;
   white-space: nowrap;
   width: 50px; }
-
-.site-branding {
-  width: 4.5%; }
 
 .home-hero {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url("../../images/home-hero.jpg");
@@ -545,8 +541,7 @@ a {
 /* Menus */
 .main-navigation {
   display: -ms-flexbox;
-  display: flex;
-  width: 600px; }
+  display: flex; }
   .main-navigation ul {
     display: -ms-flexbox;
     display: flex;
@@ -578,7 +573,6 @@ a {
     float: left;
     position: relative; }
   .main-navigation a {
-    display: block;
     text-decoration: none; }
 
 /* Small menu. */

@@ -89,6 +89,7 @@ function inhabitent_scripts() {
 	$script_url = get_template_directory_uri() . '/js/scripts.js';
 
 	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'inhabitent_search', $script_url, array( 'jquery' ), false, true );
 
 	wp_enqueue_script( 'inhabitent-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
