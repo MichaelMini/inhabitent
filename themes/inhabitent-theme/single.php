@@ -9,29 +9,29 @@ get_header(); ?>
 <h1>single.php</h1>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-<section class="container post-page">
-	<div class="post-container">
-<!-- <?php get_the_title(); ?> -->
-		<?php while ( have_posts() ) : the_post(); ?>
+			<section class="container post-page">
+				<div class="post-container">
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+					<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php the_post_navigation(); ?>
+						<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+						<?php the_post_navigation(); ?>
 
-		<?php endwhile; // End of the loop. ?>
-		
-	</div>
-<div class="side-bar">
-	<?php get_sidebar(); ?>
-</div>
-</section>
+						<?php
+							// If comments are open or we have at least one comment, load up the comment template.
+							if ( comments_open() || get_comments_number() ) :
+								comments_template();
+							endif;
+						?>
+
+					<?php endwhile; // End of the loop. ?>
+					
+				</div>
+				<div class="side-bar">
+					<?php get_sidebar(); ?>
+				</div>
+			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
