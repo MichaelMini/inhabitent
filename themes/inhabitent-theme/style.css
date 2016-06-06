@@ -321,7 +321,8 @@ img {
   height: auto;
   /* Make sure images are scaled correctly. */
   max-width: 100%;
-  /* Adhere to container width. */ }
+  /* Adhere to container width. */
+  object-fit: cover; }
 
 table {
   margin: 0 0 1.5em;
@@ -724,6 +725,9 @@ a {
   font-family: "merriweather", sans-serif;
   font-weight: normal; }
 
+.adventures img {
+  height: 540px; }
+
 .full {
   color: blue;
   width: 50%;
@@ -839,10 +843,11 @@ a {
     border: none;
     width: 100%; }
 
+.single-product-container img,
 .archive-product img,
 .archive-product a {
   height: 220px;
-  width: 377px; }
+  width: 270px; }
 
 .archive-product h1,
 .product-type h1 {
