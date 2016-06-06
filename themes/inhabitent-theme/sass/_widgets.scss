@@ -1,0 +1,31 @@
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+
+.widget {
+	margin: 0 0 $base__space-unit;
+	
+	/* Make sure select elements fit in widgets. */
+	h2 {
+		font-size: 1.5rem;
+	    font-weight: bold;
+	    text-align: left;
+	}
+	ul {
+		flex-direction: column;
+	}
+	select {
+		max-width: 100%;
+	}
+}
+
+/* Search widget. */
+.widget_search .search-submit {
+	display: none;
+}
+
+/* Sidebar */
+
+.contact-meta a {
+		text-transform: lowercase;
+}

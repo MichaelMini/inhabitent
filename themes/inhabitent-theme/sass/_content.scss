@@ -1,0 +1,109 @@
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+/* Posts and pages */
+
+.entry-header {
+	h2 {
+		position: absolute;
+		left: 0;
+		font-size: 40px;
+	}
+}
+
+.post-container {
+	width: 60%;
+	padding-bottom: 20px;
+}
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 auto $base__space-unit;
+}
+
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: $base__space-unit 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 $base__space-unit;
+}
+
+.post-page {
+	display: flex;
+	justify-content: space-between;
+}
+
+.post-page .entry-header {
+	position: relative;
+	justify-content: flex-start;
+}
+
+
+	
+.entry-header {
+	width: 670px;
+	h2 {
+	    background-color: #248a83;
+		height: auto;
+		left: 0;
+		padding: 10px 20px;
+		position: absolute;
+		text-align: left;
+		top: 10px;
+		width: 78%;
+		a {
+			color: white;
+			font-weight: bold;
+		}		
+		a:hover,
+		a:visited {
+			color: $color__gray-text-hover;
+		}
+	}
+	.entry-meta {
+	    background-color: #248a83;
+	    position: absolute;
+	    right: 32px;
+	    padding: 3px 13px;
+	    bottom: 38px;
+	    color: white;
+	}
+}
+
+/* Asides */
+
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/* Comments */
+
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
+
+/* Start Here */
+
+
+
