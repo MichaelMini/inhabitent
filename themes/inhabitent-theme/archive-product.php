@@ -23,7 +23,7 @@ get_header(); ?>
 							<?php foreach ( $terms as $term ) :?>
 							    <div class="product-type-wrapper">
 							        <p>
-							        	<a href="<?php echo get_post_type_archive_link() ?>/inhabitent/product-type/<?php echo $term->slug ?>/" class="">
+							        	<a href="<?php echo get_post_type_archive_link() ?>/inhabitent/product-type/<?php echo $term->slug ?>/" class="product-type-link">
 							        		<?php echo $term->slug ?> <!-- stuff -->
 							        	</a>
 							        </p>   

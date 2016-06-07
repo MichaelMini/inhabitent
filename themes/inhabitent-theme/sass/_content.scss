@@ -4,20 +4,6 @@
 
 /* Posts and pages */
 
-.entry-header {
-	h1,
-	h2 {
-		position: absolute;
-		left: 0;
-		font-size: 40px;
-	}
-}
-
-.post-container {
-	width: 60%;
-	padding-bottom: 20px;
-}
-
 .sticky {
 	display: block;
 }
@@ -49,45 +35,7 @@
 .post-page {
 	display: flex;
 	justify-content: space-between;
-}
-
-.post-page .entry-header {
-	position: relative;
-	justify-content: flex-start;
-}
-
-
-	
-.entry-header {
-	width: 670px;
-	h1,
-	h2 {
-	    background-color: #248a83;
-	    color: white;
-		height: auto;
-		left: 0;
-		padding: 10px 20px;
-		position: absolute;
-		text-align: left;
-		top: 10px;
-		width: 78%;
-		a {
-			color: white;
-			font-weight: bold;
-		}		
-		a:hover,
-		a:visited {
-			color: $color__gray-text-hover;
-		}
-	}
-	.entry-meta {
-	    background-color: #248a83;
-	    position: absolute;
-	    right: 32px;
-	    padding: 3px 13px;
-	    bottom: 38px;
-	    color: white;
-	}
+	margin-top: 60px;
 }
 
 /* Asides */
@@ -108,5 +56,56 @@
 
 /* Start Here */
 
+// .entry-header {
+// 	h1,
+// 	h2 {
+// 		// position: absolute;
+// 		left: 0;
+// 		font-size: 40px;
+// 	}
+// }
 
+.post-container {
+	width: 100%;
+	padding: 60px auto 20px;
+	padding-bottom: 20px;
+	h1,
+	h2 {
+	    background-color: #248a83;
+	    color: white;
+		height: auto;
+		left: 0;
+		padding: 10px 20px;
+		position: absolute;
+		text-align: left;
+		top: 10px;
+		width: 78%;
+		a {
+			font-weight: bold;
+		}		
+		a:hover {
+			color: $color__gray-text-hover;
+		}
+	}
+	.entry-header {
+		position: relative;
+		justify-content: flex-start;
+		width: 670px;
+		a {
+			color: white;
+		}
+	}
+	.entry-meta {
+	    background-color: #248a83;
+	    position: absolute;
+	    right: 30px;
+	    padding: 3px 13px;
+	    bottom: 9px;
+	    color: white;
+	    a {
+	    	text-transform: capitalize;
+	    	font-family: $font__main;
+	    }
+	}
+}
 

@@ -339,6 +339,11 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2px;
   text-transform: uppercase; }
 
+h4 {
+  position: fixed;
+  top: 30px;
+  z-index: 100; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -806,16 +811,6 @@ fieldset {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
-.entry-header h1,
-.entry-header h2 {
-  position: absolute;
-  left: 0;
-  font-size: 40px; }
-
-.post-container {
-  width: 60%;
-  padding-bottom: 20px; }
-
 .sticky {
   display: block; }
 
@@ -842,42 +837,8 @@ fieldset {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
-
-.post-page .entry-header {
-  position: relative;
-  -ms-flex-pack: start;
-      justify-content: flex-start; }
-
-.entry-header {
-  width: 670px; }
-  .entry-header h1,
-  .entry-header h2 {
-    background-color: #248a83;
-    color: white;
-    height: auto;
-    left: 0;
-    padding: 10px 20px;
-    position: absolute;
-    text-align: left;
-    top: 10px;
-    width: 78%; }
-    .entry-header h1 a,
-    .entry-header h2 a {
-      color: white;
-      font-weight: bold; }
-    .entry-header h1 a:hover,
-    .entry-header h1 a:visited,
-    .entry-header h2 a:hover,
-    .entry-header h2 a:visited {
-      color: #f0e4d1; }
-  .entry-header .entry-meta {
-    background-color: #248a83;
-    position: absolute;
-    right: 32px;
-    padding: 3px 13px;
-    bottom: 38px;
-    color: white; }
+      justify-content: space-between;
+  margin-top: 60px; }
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -892,8 +853,49 @@ fieldset {
   display: block; }
 
 /* Start Here */
-.sidebar a {
-  text-transform: capitalize; }
+.post-container {
+  width: 100%;
+  padding: 60px auto 20px;
+  padding-bottom: 20px; }
+  .post-container h1,
+  .post-container h2 {
+    background-color: #248a83;
+    color: white;
+    height: auto;
+    left: 0;
+    padding: 10px 20px;
+    position: absolute;
+    text-align: left;
+    top: 10px;
+    width: 78%; }
+    .post-container h1 a,
+    .post-container h2 a {
+      font-weight: bold; }
+    .post-container h1 a:hover,
+    .post-container h2 a:hover {
+      color: #f0e4d1; }
+  .post-container .entry-header {
+    position: relative;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    width: 670px; }
+    .post-container .entry-header a {
+      color: white; }
+  .post-container .entry-meta {
+    background-color: #248a83;
+    position: absolute;
+    right: 30px;
+    padding: 3px 13px;
+    bottom: 9px;
+    color: white; }
+    .post-container .entry-meta a {
+      text-transform: capitalize;
+      font-family: "merriweather", sans-serif; }
+
+.side-bar {
+  border-left: 1px solid #e1e1e1; }
+  .side-bar a {
+    text-transform: capitalize; }
 
 .inhabitent-hours-class span,
 .footer-block-item span {
@@ -990,87 +992,6 @@ fieldset {
 .trending .entry-title {
   height: 110px; }
 
-.adventures a,
-.adventures a:visited {
-  color: white; }
-
-.adventures a:hover {
-  color: whitesmoke; }
-
-.adventures img {
-  height: 540px; }
-
-.adventures h3 a {
-  font-family: "merriweather", sans-serif;
-  font-weight: normal;
-  text-transform: none; }
-
-.full {
-  width: 50%;
-  height: 100%; }
-  .full h3 {
-    font-size: 3rem; }
-
-.flex-half {
-  -ms-flex-direction: column;
-      flex-direction: column;
-  width: 50%;
-  height: 100%; }
-
-.half {
-  height: 50%; }
-  .half img {
-    object-fit: cover; }
-  .half h3 {
-    font-size: 2rem; }
-
-.half img,
-.quarter img {
-  height: 260px; }
-
-.flex-quarter {
-  height: 50%; }
-
-.quarter {
-  width: 50%; }
-  .quarter h3 {
-    font-size: 1.3rem;
-    margin-bottom: 40px; }
-
-.adventures li {
-  border: 6px solid white; }
-
-.story-wrapper {
-  position: relative; }
-
-.img-1 {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url("../../images/canoe-girl-768x512.jpg") center/cover;
-  height: 512px; }
-
-.img-2,
-.img-3,
-.img-4 {
-  height: 250px; }
-
-.img-2 {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url("../../images/beach-bonfire-768x512.jpg") center/cover; }
-
-.img-3 {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url("../../images/mountain-hikers-768x512.jpg") center/cover; }
-
-.img-4 {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url("../../images/night-sky-768x512.jpg") center/cover; }
-
-.story-info {
-  position: absolute;
-  top: 3px;
-  padding: 0 30px; }
-
-.see-more {
-  margin: 40px 6px 80px; }
-  .see-more a {
-    font-size: 1.2rem; }
-
 .about-page .entry-header {
   display: -ms-flexbox;
   display: flex;
@@ -1160,6 +1081,16 @@ fieldset {
   font-size: 2.6rem;
   font-weight: bold;
   display: inline; }
+
+.single-product article {
+  width: 1120px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex; }
+
+.type-product .entry-header {
+  width: 330vw;
+  margin: 60px 70px 0 0; }
 
 .single-product article {
   width: 1120px;

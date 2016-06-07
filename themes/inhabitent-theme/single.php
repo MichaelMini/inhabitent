@@ -6,11 +6,11 @@
  */
 
 get_header(); ?>
-<h1>single.php</h1>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<section class="container post-page">
 				<div class="post-container">
+<h4>single.php</h4>
 
 					<?php while ( have_posts() ) : the_post(); ?>
 
