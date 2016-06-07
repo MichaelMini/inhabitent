@@ -123,6 +123,9 @@ get_header(); ?>
 						</ul>
 					</ul>
 				</ul>
+				<p class="see-more">
+                  <a href="http://tent.academy.red/adventures/" class="btn">More Adventures</a>
+            	</p>
 			</section>
 
 		</main><!-- #main -->

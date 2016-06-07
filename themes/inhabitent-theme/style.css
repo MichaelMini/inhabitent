@@ -281,7 +281,8 @@ body {
 
 a {
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "Novecento", sans-serif; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -719,18 +720,18 @@ a {
 
 .adventures a,
 .adventures a:visited {
-  color: white;
-  text-transform: none; }
+  color: white; }
 
 .adventures a:hover {
   color: whitesmoke; }
 
-.adventures h3 {
-  font-family: "merriweather", sans-serif;
-  font-weight: normal; }
-
 .adventures img {
   height: 540px; }
+
+.adventures h3 a {
+  font-family: "merriweather", sans-serif;
+  font-weight: normal;
+  text-transform: none; }
 
 .full {
   width: 50%;
@@ -792,6 +793,11 @@ a {
   position: absolute;
   top: 3px;
   padding: 0 30px; }
+
+.see-more {
+  margin: 40px 6px 80px; }
+  .see-more a {
+    font-size: 1.2rem; }
 
 .about-page .entry-header {
   display: -ms-flexbox;
