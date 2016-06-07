@@ -9,13 +9,14 @@
 .container {
     margin: 0 auto;
     width: 1120px;
-    h2 {
-    	text-align: center;
-    	text-transform: uppercase;
-    	font-size: 2.4rem;
-    	font-weight: 400;
-        padding: 30px;
-    }
+}
+
+.front-page h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2.4rem;
+	font-weight: 400;
+    padding: 30px;
 }
 
 .login h1 a {

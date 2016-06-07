@@ -526,18 +526,24 @@ textarea {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-.widget {
-  margin: 0 0 1.5em;
-  /* Make sure select elements fit in widgets. */ }
-  .widget h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: left; }
-  .widget ul {
-    -ms-flex-direction: column;
-        flex-direction: column; }
-  .widget select {
-    max-width: 100%; }
+.widget-area {
+  width: 300px;
+  padding: 60px 0 0 60px; }
+  .widget-area a {
+    font-family: "merriweather", sans-serif; }
+  .widget-area .widget {
+    margin: 0 0 1.5em;
+    /* Make sure select elements fit in widgets. */ }
+    .widget-area .widget h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: left;
+      padding: 0; }
+    .widget-area .widget ul {
+      -ms-flex-direction: column;
+          flex-direction: column; }
+    .widget-area .widget select {
+      max-width: 100%; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -546,6 +552,9 @@ textarea {
 /* Sidebar */
 .contact-meta a {
   text-transform: lowercase; }
+
+.widget_archive a {
+  text-transform: capitalize; }
 
 /*--------------------------------------------------------------
 # Media
@@ -619,12 +628,13 @@ object {
 .container {
   margin: 0 auto;
   width: 1120px; }
-  .container h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2.4rem;
-    font-weight: 400;
-    padding: 30px; }
+
+.front-page h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding: 30px; }
 
 .login h1 a {
   background-size: 312px;
@@ -854,48 +864,46 @@ fieldset {
 
 /* Start Here */
 .post-container {
-  width: 100%;
-  padding: 60px auto 20px;
+  width: 760px;
+  padding: 60px 0 20px;
   padding-bottom: 20px; }
-  .post-container h1,
-  .post-container h2 {
-    background-color: #248a83;
+
+.have-post h1,
+.have-post h2 {
+  background-color: #248a83;
+  color: white;
+  padding: 10px 20px;
+  position: absolute;
+  text-align: left;
+  top: 10px;
+  width: 78%; }
+  .have-post h1 a,
+  .have-post h2 a {
     color: white;
-    height: auto;
-    left: 0;
-    padding: 10px 20px;
-    position: absolute;
-    text-align: left;
-    top: 10px;
-    width: 78%; }
-    .post-container h1 a,
-    .post-container h2 a {
-      font-weight: bold; }
-    .post-container h1 a:hover,
-    .post-container h2 a:hover {
-      color: #f0e4d1; }
-  .post-container .entry-header {
-    position: relative;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
-    width: 670px; }
-    .post-container .entry-header a {
-      color: white; }
-  .post-container .entry-meta {
-    background-color: #248a83;
-    position: absolute;
-    right: 30px;
-    padding: 3px 13px;
-    bottom: 9px;
-    color: white; }
-    .post-container .entry-meta a {
-      text-transform: capitalize;
-      font-family: "merriweather", sans-serif; }
+    font-weight: bold; }
+  .have-post h1 a:hover,
+  .have-post h2 a:hover {
+    color: #f0e4d1; }
+
+.entry-header {
+  position: relative;
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
+
+.entry-meta {
+  background-color: #248a83;
+  position: absolute;
+  right: 0;
+  padding: 3px 13px;
+  bottom: 8px;
+  color: white; }
+  .entry-meta a {
+    color: white;
+    text-transform: capitalize;
+    font-family: "merriweather", sans-serif; }
 
 .side-bar {
   border-left: 1px solid #e1e1e1; }
-  .side-bar a {
-    text-transform: capitalize; }
 
 .inhabitent-hours-class span,
 .footer-block-item span {

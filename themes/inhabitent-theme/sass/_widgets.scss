@@ -2,22 +2,30 @@
 # Widgets
 --------------------------------------------------------------*/
 
-.widget {
-	margin: 0 0 $base__space-unit;
-	
-	/* Make sure select elements fit in widgets. */
-	h2 {
-		font-size: 1.5rem;
-	    font-weight: bold;
-	    text-align: left;
+.widget-area {
+    width: 300px;
+    padding: 60px 0 0 60px;
+    a {
+		font-family: $font__main;
+    }
+	.widget {
+		margin: 0 0 $base__space-unit;
+		
+		/* Make sure select elements fit in widgets. */
+		h2 {
+			font-size: 1.5rem;
+		    font-weight: bold;
+		    text-align: left;
+		    padding: 0;
+		}
+		ul {
+			flex-direction: column;
+		}
+		select {
+			max-width: 100%;
+		}
 	}
-	ul {
-		flex-direction: column;
-	}
-	select {
-		max-width: 100%;
-	}
-}
+} 
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -26,6 +34,14 @@
 
 /* Sidebar */
 
-.contact-meta a {
+.contact-meta {
+	a {
 		text-transform: lowercase;
+	}
+}
+
+.widget_archive {
+		a {
+		text-transform: capitalize;
+	}
 }

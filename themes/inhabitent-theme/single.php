@@ -6,15 +6,16 @@
  */
 
 get_header(); ?>
+<h4>single.php</h4>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<section class="container post-page">
 				<div class="post-container">
-<h4>single.php</h4>
 
 					<?php while ( have_posts() ) : the_post(); ?>
-
-						<?php get_template_part( 'template-parts/content', 'single' ); ?>
+						<div class="have-post">
+							<?php get_template_part( 'template-parts/content', 'single' ); ?>
+						</div>
 
 						<?php the_post_navigation(); ?>
 
