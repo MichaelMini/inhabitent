@@ -719,7 +719,11 @@ a {
 
 .adventures a,
 .adventures a:visited {
-  color: white; }
+  color: white;
+  text-transform: none; }
+
+.adventures a:hover {
+  color: whitesmoke; }
 
 .adventures h3 {
   font-family: "merriweather", sans-serif;
@@ -729,10 +733,10 @@ a {
   height: 540px; }
 
 .full {
-  color: blue;
   width: 50%;
-  height: 100%;
-  font-size: 38px; }
+  height: 100%; }
+  .full h3 {
+    font-size: 3rem; }
 
 .flex-half {
   -ms-flex-direction: column;
@@ -741,30 +745,53 @@ a {
   height: 100%; }
 
 .half {
-  height: 50%;
-  color: red;
-  font-size: 20.1px; }
+  height: 50%; }
   .half img {
-    object-fit: cover;
-    height: 160px; }
+    object-fit: cover; }
+  .half h3 {
+    font-size: 2rem; }
+
+.half img,
+.quarter img {
+  height: 260px; }
 
 .flex-quarter {
   height: 50%; }
 
 .quarter {
-  width: 50%;
-  color: green;
-  font-size: 17px; }
+  width: 50%; }
+  .quarter h3 {
+    font-size: 1.3rem;
+    margin-bottom: 40px; }
 
 .adventures li {
-  border: 10px solid white; }
+  border: 6px solid white; }
 
 .story-wrapper {
   position: relative; }
 
+.img-1 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url("../../images/canoe-girl-768x512.jpg") center/cover;
+  height: 512px; }
+
+.img-2,
+.img-3,
+.img-4 {
+  height: 250px; }
+
+.img-2 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url("../../images/beach-bonfire-768x512.jpg") center/cover; }
+
+.img-3 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url("../../images/mountain-hikers-768x512.jpg") center/cover; }
+
+.img-4 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url("../../images/night-sky-768x512.jpg") center/cover; }
+
 .story-info {
   position: absolute;
-  top: 3px; }
+  top: 3px;
+  padding: 0 30px; }
 
 .about-page .entry-header {
   display: -ms-flexbox;
