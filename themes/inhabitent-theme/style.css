@@ -466,6 +466,37 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+/* Search Form */
+.search-page h1 {
+  font-size: 2.4rem;
+  border-bottom: 1px solid #e1e1e1;
+  margin: 0;
+  padding: 0 0 30px 0; }
+
+.search-page h2 {
+  font-size: 2.1rem; }
+
+.search-page .entry-meta {
+  display: none; }
+
+.search-pagination {
+  border-top: 1px solid #e1e1e1;
+  font-family: Novecento Sans Web,sans-serif;
+  padding: 1.5rem 0;
+  text-transform: uppercase; }
+
+.search-pagination .page-numbers.current {
+  background-color: gray; }
+
+.search-pagination .page-numbers {
+  background-color: #248a83;
+  color: #fff;
+  display: inline-block;
+  line-height: 1;
+  padding: .5rem .75rem;
+  margin-right: .25rem;
+  text-align: center; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
