@@ -39,7 +39,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-	color: #666;
+	color: $color__border-abbr;
 	border: 1px solid #ccc;
 	border-radius: 3px;
 
@@ -90,11 +90,38 @@ textarea {
 }
 
 .search-pagination .page-numbers {
-    background-color: #248a83;
-    color: #fff;
+    background-color: $color__link-visited;
+    color: $color__background-body;
     display: inline-block;
     line-height: 1;
     padding: .5rem .75rem;
     margin-right: .25rem;
     text-align: center;
+}
+
+/* Comments Style */
+
+.comment-form-author,
+.comment-form-email {
+	display: inline-block;
+    width: 49%;
+}
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+    input {
+    	width: 100%;
+    }
+}
+	
+input[type=email], 
+input[type=password], 
+input[type=search], 
+input[type=text], 
+input[type=url], 
+textarea {
+    color: #666;
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    border-radius: 0;
 }

@@ -25,14 +25,14 @@
 }
 
 .black-btn {
-    color: black;
-    border: 1px solid black;
+    color: $color__text-main;
+    border: 1px solid $color__text-main;
 }
 
 .white-btn,
 .white-btn:visited {
-    color: white;
-    border: 1px solid white;
+    color: $color__background-body;
+    border: 1px solid $color__background-body;
 }
 
 .btn,
@@ -46,7 +46,7 @@
 
 .black-btn,
 .black-btn:visited {
-    color: black;
+    color: $color__text-main;
 }
 
 .btn,
@@ -55,14 +55,14 @@
 .white-btn:hover {
     background: $color__link; 
     border: 1px solid $color__link;
-    color: white;
+    color: $color__background-body;
 
 }
 
 .btn:hover,
 .white-btn:hover {
     background: #19625d;
-    color: white;
+    color: $color__background-body;
 }
 
 .read-btn {

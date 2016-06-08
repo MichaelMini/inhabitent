@@ -61,14 +61,14 @@
 	padding: 60px 0 20px;
 	padding-bottom: 20px;
 		.entry-meta {
-	    background-color: #248a83;
+	    background-color: $color__link;
 	    position: absolute;
 	    right: 0;
 	    padding: 3px 13px;
 	    bottom: 8px;
-	    color: white;
+	    color: $color__background-body;
 	    a {
-	    	color: white;
+	    	color: $color__background-body;
 	    	text-transform: capitalize;
 	    	font-family: $font__main;
 	    }
@@ -78,8 +78,8 @@
 .have-post {
 	h1,
 	h2 {
-	    background-color: #248a83;
-	    color: white;
+	    background-color: $color__link;
+	    color: $color__background-body;
 		padding: 10px 20px;
 		position: absolute;
 		text-align: left;
@@ -87,7 +87,7 @@
 		width: 78%;
 		a {
 			font-size: 2rem;
-			color: white;
+			color: $color__background-body;
 			font-weight: bold;
 		}		
 		a:hover {

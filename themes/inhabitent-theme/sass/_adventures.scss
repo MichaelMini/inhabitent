@@ -1,7 +1,7 @@
 .adventures {
 	a,
 	a:visited {
-		color: white;
+		color: $color__background-body;
 	}
 	a:hover {
 		color: whitesmoke;
@@ -22,10 +22,8 @@
 }
 
 .full {
-	// color: blue;
 	width: 50%;
 	height: 100%;
-	// font-size: 38px;
 	h3 {
 		font-size: 3rem;
 	}
@@ -39,8 +37,6 @@
 
 .half {
 	height: 50%;
-	// color: red;
-	// font-size: 20.1px;
 	img {
 	    object-fit: cover;
 	}
@@ -59,8 +55,6 @@
 
 .quarter {
 	width: 50%;
-	// color: green;
-	// font-size: 17px;
 	h3 {
 		font-size: 1.3rem;
 		margin-bottom: 40px;
@@ -68,7 +62,7 @@
 }
 
 .adventures li {
-	border: 6px solid white;
+	border: 6px solid $color__background-body;
 }
 
 .story-wrapper {

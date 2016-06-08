@@ -1,7 +1,7 @@
 .site-footer {
     background: url(../../images/dark-wood.png);
     background-size: 512px 512px;
-    color: #fff;
+    color: $color__background-body;
     height: 500px;
 }
 
@@ -11,7 +11,7 @@
 
 .contact a,
 .contact a:hover {
-	color: white;
+	color: $color__background-body ;
 	text-transform: lowercase;
 }
 
