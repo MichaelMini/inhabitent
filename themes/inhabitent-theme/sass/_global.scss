@@ -8,7 +8,7 @@
 
 .container {
     margin: 0 auto;
-    width: 1120px;
+    width: 1220px;
 }
 
 .front-page h2 {
@@ -54,8 +54,9 @@
 .black-btn:hover,
 .white-btn:hover {
     background: $color__link; 
-    border: none;
+    border: 1px solid $color__link;
     color: white;
+
 }
 
 .btn:hover,

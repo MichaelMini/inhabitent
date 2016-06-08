@@ -69,7 +69,7 @@ dd {
 
 img {
 	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+	max-width: 600px; /* Adhere to container width. */
 	object-fit: cover;
 }
 
@@ -77,6 +77,7 @@ table {
 	margin: 0 0 $base__space-unit;
 	width: 100%;
 }
+
 h1, h2, h3, h4, h5, h6 {
     clear: both;
     font-family: $font__head;

@@ -25,6 +25,11 @@ get_header(); ?>
 					<!-- Price goes here -->
 					<?php echo CFS()->get( 'price' ); ?>
 					<?php the_content(); ?>
+					<div class="social-buttons">
+					   <a href="" type="" class="black-btn"><i class="fa fa-facebook"></i>Like</a>
+					   <a href="" type="" class="black-btn"><i class="fa fa-twitter"></i>Tweet</a>
+					   <a href="" type="" class="black-btn"><i class="fa fa-pinterest"></i>Pin</a>
+					</div>
 				</div><!-- .entry-content -->
 			</article><!-- #post-## -->
 

@@ -283,7 +283,7 @@ body {
 a {
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Novecento", sans-serif; }
+  font-family: "novecento", sans-serif; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -322,7 +322,7 @@ dd {
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
-  max-width: 100%;
+  max-width: 600px;
   /* Adhere to container width. */
   object-fit: cover; }
 
@@ -332,7 +332,7 @@ table {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: "Novecento", sans-serif;
+  font-family: "novecento", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase; }
 
@@ -655,7 +655,7 @@ object {
 /* Global Class */
 .container {
   margin: 0 auto;
-  width: 1120px; }
+  width: 1220px; }
 
 .front-page h2 {
   text-align: center;
@@ -694,7 +694,7 @@ object {
 .black-btn:hover,
 .white-btn:hover {
   background: #248a83;
-  border: none;
+  border: 1px solid #248a83;
   color: white; }
 
 .btn:hover,
@@ -727,8 +727,8 @@ a {
   .main-navigation ul {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 480px;
     list-style: none;
     margin: 0;
@@ -1068,10 +1068,12 @@ fieldset {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  border-top: 1px dashed gray;
+  padding-bottom: 90px; }
 
 .archive-product .product-type-container {
-  padding: 0 300px; }
+  padding: 0px 300px 30px; }
 
 .single-product-container {
   width: 260px;
@@ -1085,14 +1087,15 @@ fieldset {
     margin: 0; }
     .single-product-container .entry-header h1,
     .single-product-container .product-type-wrapper h1 {
-      font-size: smaller;
-      text-overflow: ellipsis;
+      font-size: 0.8rem;
       display: inline-block;
       overflow: hidden;
       white-space: nowrap;
-      text-overflow: ellipsis;
       height: 22px;
-      width: 69%; }
+      width: 630px; }
+    .single-product-container .entry-header .price,
+    .single-product-container .product-type-wrapper .price {
+      overflow: hidden; }
 
 .single-product-container .entry-content {
   display: -ms-flexbox;
@@ -1126,7 +1129,7 @@ fieldset {
   display: inline; }
 
 .single-product article {
-  width: 1120px;
+  width: 1220px;
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex; }
@@ -1134,11 +1137,19 @@ fieldset {
 .type-product .entry-header {
   margin: 60px 70px 0 0; }
 
+.taxonomy-description {
+  font-size: 1.1rem;
+  padding: 0px 280px; }
+
+a.black-btn {
+  color: black; }
+
 .single-product article {
-  width: 1120px;
+  width: 1220px;
   margin: 0 auto;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding-bottom: 90px; }
 
 .type-product .entry-header {
   margin: 60px 70px 0 0; }

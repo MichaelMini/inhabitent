@@ -23,7 +23,7 @@ get_header(); ?>
 							<?php foreach ( $terms as $term ) :?>
 							    <div class="product-type-wrapper">
 							        <p>
-							        	<a href="<?php echo get_post_type_archive_link() ?>/inhabitent/product-type/<?php echo $term->slug ?>/" class="product-type-link">
+							        	<a href="<?php echo get_term_link($term, 'product-type') ?>" class="product-type-link">
 							        		<?php echo $term->slug ?> <!-- stuff -->
 							        	</a>
 							        </p>   
@@ -55,9 +55,10 @@ get_header(); ?>
 							</header><!-- .entry-header -->
 
 							<div class="entry-content product-type-wrapper">
-								<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+								<?php the_title( '<h1 class="entry-title">', '....................</h1>' ); ?>
 								<!-- Price goes here -->
-								<?php echo CFS()->get( 'price' ); ?>
+								<!-- <h1>hello</h1> -->
+									<?php echo CFS()->get( 'price' ); ?>
 							</div><!-- .entry-content -->
 						</div>
 				</article><!-- #post-## -->

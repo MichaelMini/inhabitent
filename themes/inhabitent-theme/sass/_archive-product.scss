@@ -1,10 +1,12 @@
 .all-products-wrap {
 	display: flex;
 	flex-wrap: wrap;
+    border-top: 1px dashed gray;
+	padding-bottom: 90px;
 }
 
 .archive-product .product-type-container {
-	padding: 0 300px;
+    padding: 0px 300px 30px;
 }
 
 .single-product-container {
@@ -19,14 +21,15 @@
 		width: 270px;
 		margin: 0;
 		h1 {
-			font-size: smaller;
-			text-overflow: ellipsis;
+			font-size: 0.8rem;
 		    display: inline-block;
 		    overflow: hidden;
 		    white-space: nowrap;
-		    text-overflow: ellipsis;
 		    height: 22px;
-		    width: 69%;
+		    width: 630px;
+		}
+		.price {
+			overflow: hidden;
 		}
 	}
 }
@@ -67,7 +70,7 @@
 
 .single-product {
 	article {
-		width: 1120px;
+		width: 1220px;
 		margin: 0 auto;
 		display: flex;
 	}
@@ -77,4 +80,13 @@
 	.entry-header {
 	    margin: 60px 70px 0 0;
 	}
+}
+
+.taxonomy-description {
+    font-size: 1.1rem;
+    padding: 0px 280px;
+}
+
+a.black-btn {
+	color: black;
 }
