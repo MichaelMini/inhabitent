@@ -322,7 +322,7 @@ dd {
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
-  max-width: 600px;
+  max-width: 100%;
   /* Adhere to container width. */
   object-fit: cover; }
 
@@ -1133,6 +1133,9 @@ fieldset {
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex; }
+
+#single-product img {
+  max-width: 600px; }
 
 .type-product .entry-header {
   margin: 60px 70px 0 0; }
