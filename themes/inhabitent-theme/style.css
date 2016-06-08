@@ -867,6 +867,17 @@ fieldset {
   width: 760px;
   padding: 60px 0 20px;
   padding-bottom: 20px; }
+  .post-container .entry-meta {
+    background-color: #248a83;
+    position: absolute;
+    right: 0;
+    padding: 3px 13px;
+    bottom: 8px;
+    color: white; }
+    .post-container .entry-meta a {
+      color: white;
+      text-transform: capitalize;
+      font-family: "merriweather", sans-serif; }
 
 .have-post h1,
 .have-post h2 {
@@ -879,6 +890,7 @@ fieldset {
   width: 78%; }
   .have-post h1 a,
   .have-post h2 a {
+    font-size: 2rem;
     color: white;
     font-weight: bold; }
   .have-post h1 a:hover,
@@ -889,18 +901,6 @@ fieldset {
   position: relative;
   -ms-flex-pack: start;
       justify-content: flex-start; }
-
-.entry-meta {
-  background-color: #248a83;
-  position: absolute;
-  right: 0;
-  padding: 3px 13px;
-  bottom: 8px;
-  color: white; }
-  .entry-meta a {
-    color: white;
-    text-transform: capitalize;
-    font-family: "merriweather", sans-serif; }
 
 .side-bar {
   border-left: 1px solid #e1e1e1; }
@@ -1028,6 +1028,16 @@ fieldset {
 .page-find-us .post-container h2 {
   text-align: left;
   font-weight: bold; }
+
+.error-404 .search-btn {
+  display: none; }
+
+.error-404 .search-field {
+  display: inline-block; }
+
+.error-404 ul {
+  -ms-flex-direction: column;
+      flex-direction: column; }
 
 .all-products-wrap {
   display: -ms-flexbox;
