@@ -4,8 +4,10 @@
 	}
 	.search-field {
 		display: inline-block;
+		text-transform: none;
 	}
 	ul {
 		flex-direction: column;
 	}
 }
+

@@ -516,6 +516,9 @@ textarea {
   border: 1px solid #e1e1e1;
   border-radius: 0; }
 
+.search-field {
+  text-transform: uppercase; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -1247,7 +1250,8 @@ a.black-btn {
   display: none; }
 
 .error-404 .search-field {
-  display: inline-block; }
+  display: inline-block;
+  text-transform: none; }
 
 .error-404 ul {
   -ms-flex-direction: column;
