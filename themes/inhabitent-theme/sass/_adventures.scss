@@ -6,12 +6,8 @@
 	a:hover {
 		color: whitesmoke;
 	}
-	h3 {
-		// font-family: $font__main;
-	}
 	img {
 		height: 540px;
-		// z-index: -1;
 	}
 }
 
@@ -38,15 +34,15 @@
 .half {
 	height: 50%;
 	img {
-	    object-fit: cover;
+		object-fit: cover;
 	}
-    h3 {
-    	font-size: 2rem;
-    }
+	h3 {
+		font-size: 2rem;
+	}
 }
 .half img,
 .quarter img {
-	    height: 260px;
+		height: 260px;
 }
 
 .flex-quarter {

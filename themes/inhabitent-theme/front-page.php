@@ -61,10 +61,10 @@ get_header(); ?>
 								   				/<?php comments_number( '0 Comments' ); ?>
 								   			</span>
 								   			<h3 class="entry-title">
-									   			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>  			
+									   			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 								   			</h3>
-								   			<a href="<?php the_permalink(); ?>" class="black-btn">Read Entry</a>  			
-								   		</div>	
+								   			<a href="<?php the_permalink(); ?>" class="black-btn">Read Entry</a>
+								   		</div>
 								   	</li>
 						<?php endforeach; wp_reset_postdata(); ?>
 					<?php endif; ?>

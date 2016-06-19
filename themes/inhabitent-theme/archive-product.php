@@ -57,7 +57,6 @@ get_header(); ?>
 							<div class="entry-content product-type-wrapper">
 								<?php the_title( '<h1 class="entry-title">', '....................</h1>' ); ?>
 								<!-- Price goes here -->
-								<!-- <h1>hello</h1> -->
 									<?php echo CFS()->get( 'price' ); ?>
 							</div><!-- .entry-content -->
 						</div>

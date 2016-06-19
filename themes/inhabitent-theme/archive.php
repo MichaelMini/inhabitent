@@ -42,10 +42,6 @@ get_header(); ?>
 								</div>
 						</article><!-- #post-## -->
 
-					<?php
-						// get_template_part( 'template-parts/content' );
-					?>
-
 				<?php endwhile; ?>
 			</section>
 			<?php the_posts_navigation(); ?>
