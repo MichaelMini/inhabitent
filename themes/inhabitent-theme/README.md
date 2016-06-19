@@ -1,0 +1,28 @@
+# Inhabitent - Custom WordPress Theme ( forked from underscore )
+
+Project 04 for RED Academy Front-End Web Development Professional Program
+
+## Project Description
+
+A custom WordPress theme for an mock-up camping store. The site includes custom post types ('products' and 'adventures') and a custom taxonomy ('product type'). There are two custom widgets to allow client to set business hours and contact information.  Finally, it includes a custom page template for the 'about' page, allowing content authors to upload a featured image for that page that will display as a background image.
+
+## The Tools
+
+* WordPress
+	- Custom Post Types and Custom Taxonomies
+	- Custom Field Suite Plugin
+	- A fully customized theme based on [underscores](https://github.com/automattic/_s)
+	- Contact form 7
+	- Theme Check
+* SASS / CSS3
+* PHP
+* jQuery
+* Gulp
+* mamp
+
+## Summary
+
+This project is fairly challenging as more than half of our class could not finished this on time and one other student dropped out. 
+
+What I found really challenging was to style scss with 'forever overlaping... css' from RED-starter-theme or wordpress build-in IDs and Classes. It's an art of balancing the re-use ability and specificity. I have learned from this, is to do all the global and the least specific styling first. 
+
