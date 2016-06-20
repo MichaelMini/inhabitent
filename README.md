@@ -6,19 +6,19 @@ Project 04 for RED Academy Front-End Web Development Professional Program
 
 A custom WordPress theme for an mock-up camping store. The site includes custom post types ('products' and 'adventures') and a custom taxonomy ('product type'). There are two custom widgets to allow client to set business hours and contact information.  Finally, it includes a custom page template for the 'about' page, allowing content authors to upload a featured image for that page that will display as a background image.
 
-## The Tools
+## The Tools:
 
-* WordPress
+1. WordPress
 	- Custom Post Types and Custom Taxonomies
 	- Custom Field Suite Plugin
 	- A fully customized theme based on [underscores](https://github.com/automattic/_s)
 	- Contact form 7
 	- Theme Check
-* SASS / CSS3
-* PHP
-* jQuery
-* Gulp
-* mamp
+2. SASS / CSS3
+3. PHP
+4. jQuery
+5. Gulp
+6. mamp
 
 ## Summary
 
