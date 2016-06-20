@@ -1,6 +1,6 @@
 # Inhabitent - Custom WordPress Theme ( forked from underscore )
 
-Project 04 for RED Academy Front-End Web Development Professional Program
+Forth Project for RED Academy - Full-Time Front-End Web Development Professional Program
 
 ## Project Description
 
