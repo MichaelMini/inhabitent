@@ -2,6 +2,8 @@
 
 Forth Project for RED Academy - Full-Time Front-End Web Development Professional
 
+![image](https://cloud.githubusercontent.com/assets/16886114/16460851/58f32422-3dde-11e6-9116-e4df55c3cc7c.png)
+
 ## Project Description
 
 A custom WordPress theme for an mock-up camping store. The site includes custom post types ('products' and 'adventures') and a custom taxonomy ('product type'). There are two custom widgets to allow client to set business hours and contact information.  Finally, it includes a custom page template for the 'about' page, allowing content authors to upload a featured image for that page that will display as a background image.
